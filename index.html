@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Shippori+Mincho:wght@400;500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -133,6 +133,36 @@
       .glass-link:hover .link-icon {
         opacity: 0.85;
       }
+
+      /* ヒーロー自己紹介：丸ゴより締まった編集デザイン寄りのタイポ */
+      .bio-copy {
+        font-family:
+          "Shippori Mincho",
+          "Hiragino Mincho ProN",
+          "Yu Mincho",
+          "Noto Serif JP",
+          serif;
+        font-weight: 400;
+        font-size: clamp(0.9375rem, 2.2vw, 1.0625rem);
+        letter-spacing: 0.08em;
+        line-height: 2;
+        color: #3d4c56;
+      }
+
+      .bio-copy p {
+        margin-bottom: 0.35rem;
+      }
+
+      .bio-copy .bio-tagline-en {
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 0.95rem;
+        letter-spacing: 0.06em;
+        color: #64748b;
+        margin-top: 1.25rem;
+        margin-bottom: 0;
+      }
     </style>
   </head>
   <body>
@@ -153,10 +183,13 @@
           <div
             class="w-24 h-px bg-gradient-to-r from-transparent via-slate-400 to-transparent mx-auto mb-8"
           ></div>
-          <div class="text-slate-600 font-light text-base leading-relaxed max-w-md mx-auto text-left sm:text-center">
-            <p class="mb-2">テンポにはうるさいですが、人には穏やかです。</p>
-            <p class="mb-2">現場のこと、音のこと、少しだけ日常。</p>
-            <p class="text-slate-500 italic text-sm mt-3" lang="en">
+          <div
+            class="bio-copy max-w-lg mx-auto text-left sm:text-center px-1"
+            lang="ja"
+          >
+            <p>テンポにはうるさいですが、人には穏やかです。</p>
+            <p>現場のこと、音のこと、少しだけ日常。</p>
+            <p class="bio-tagline-en" lang="en">
               Strict with tempo, easy with people.
             </p>
           </div>
