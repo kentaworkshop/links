@@ -147,6 +147,7 @@
         letter-spacing: 0.08em;
         line-height: 2;
         color: #3d4c56;
+        text-align: center;
       }
 
       .bio-copy p {
@@ -162,6 +163,20 @@
         color: #64748b;
         margin-top: 1.25rem;
         margin-bottom: 0;
+      }
+
+      @media (max-width: 639px) {
+        .bio-copy {
+          font-size: 0.8125rem;
+          letter-spacing: 0.05em;
+          line-height: 1.9;
+          max-width: 22rem;
+        }
+
+        .bio-copy .bio-tagline-en {
+          font-size: 0.8125rem;
+          letter-spacing: 0.04em;
+        }
       }
     </style>
   </head>
@@ -184,7 +199,7 @@
             class="w-24 h-px bg-gradient-to-r from-transparent via-slate-400 to-transparent mx-auto mb-8"
           ></div>
           <div
-            class="bio-copy max-w-lg mx-auto text-left sm:text-center px-1"
+            class="bio-copy max-w-lg mx-auto text-center px-2 sm:px-1"
             lang="ja"
           >
             <p>テンポにはうるさいですが、人には穏やかです。</p>
